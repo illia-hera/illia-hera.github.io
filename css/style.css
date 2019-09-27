@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+    font-size: 62.5% ;
+}
+
+.todo-app-wrapper {
+    background: linear-gradient(45deg, rgb(28, 137, 180) 0%, rgba(111, 161, 218, 0.82) 30%, rgba(145,232,66,0.73) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+    display: flex;
+    min-width: 600px;
+    min-height: 100%;
+}
+
+.todo-app{
+    min-width: 600px;
+    background: linear-gradient(45deg, rgba(210,255,82,1) 0%, rgba(145,232,66,0.82) 40%, rgba(66, 232, 232, 0.73) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+    margin: auto;
+}
+
+.todo-app--title {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.todo-app--title_size {
+    font-size: 4rem;
+} 
+
+.todo-app--input {
+    font-size: 2rem;
+    color: #009933;
+    padding: .2rem .3rem;
+    border: solid 0.2rem #009933;
+    border-radius: 0.7rem;
+}
+
+.todo-app--create-task-wrapper,
+.task {
+    width: 90%;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-gap: .8rem;
+    grid-template-columns: 3fr 1fr;
+}
+
+.todo-app--title_color,
+.task--content_color {
+    color: #359b63;
+}
+
+.todo-app--add-btn,
+.task--action-btn,
+.todo-app--add-btn_color,
+.todo-app--toggle-all-btn,
+.task--action-btn_toggle,
+.task--action-btn_negative,
+.todo-app--delete-all-btn,
+.todo-app--show-all-btn {
+    color:#f0ffff;
+    cursor: pointer;
+
+}
+
+.task--action-btn_toggle,
+.todo-app--show-all-btn {
+    background-color:#ff5e00;
+    border-color: #ff5e00;
+}
+
+.todo-app--add-btn_color {
+    background-color:#009933;
+    border-color: #009933;
+}
+
+.task--action-btn_negative {
+    margin-left: .8rem;
+    background-color: #aa2121de;
+    border-color:#992525;
+}
+
+.task--action-btn_toggle,
+.task--action-btn_negative,
+.todo-app--add-btn_color,
+.todo-app--toggle-all-btn,
+.todo-app--delete-all-btn,
+.todo-app--show-all-btn {
+    border-radius: .2rem;
+    border-width: .1rem;
+    border-style: solid;
+    padding: .5rem 1rem;
+}
+
+.created-task--item-group {
+    list-style: none;
+    padding: 0;
+}
+
+.task--content {
+    margin: 0;
+    font-size: 1.5rem;
+    overflow: auto;
+    line-height: 2.3rem;
+}
+
+.created-task--item {
+    border-top: dotted 0.1rem #009933;
+    border-bottom: dotted 0.1rem #009933;
+}
+
+.todo-app--input_error {
+    box-shadow: inset 0 0 1rem #ff08005b
+}
+
+.line-through {
+    text-decoration: overline;
+}

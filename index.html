@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="todo-app-wrapper">
+        <article class="todo-app">
+            <h1 class="todo-app--title todo-app--title_size todo-app--title_color">ToDo</h1>
+            <div class="todo-app--create-task-wrapper">
+                <input type="" class="todo-app--input" id="task-title" placeholder="Enter task">
+                <button class="todo-app--add-btn todo-app--add-btn_color" id="task-create-button">Add</button>
+                <button class="todo-app--show-all-btn" id="task-debug-button">Show all saved tasks</button>
+            </div>
+            <section class="created-task">
+                <ul class="created-task--item-group" id='task-item-group'>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <!-- <button id="task-debug-button">Debug</button>
+    <button id="task-deleteAll-button">Delete all</button>
+    <button id="task-toggleAll-button">Toggle all</button> -->
+    <script src="main.js"></script>
+</body>
+
+</html>
