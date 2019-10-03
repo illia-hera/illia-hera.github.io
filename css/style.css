@@ -97,7 +97,12 @@ body {
     margin: 1.5rem auto;
     display: grid;
     grid-gap: .8rem;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 5fr 1fr;
+}
+
+.task--action-btn-wrapper {
+    display: grid;
+    grid-gap: .8rem;
 }
 
 .todo-app--title_color,
@@ -130,7 +135,6 @@ body {
 }
 
 .task--action-btn_negative {
-    margin-left: .8rem;
     background-color: #aa2121de;
     border-color:#992525;
 }
